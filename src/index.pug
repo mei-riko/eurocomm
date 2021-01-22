@@ -1,0 +1,80 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Index Page
+
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include component/header/header.pug
+        section.container
+            .slider.slider_index.mb-3
+                .slider__item.slider_index__item(style="background-image:url('./img/demo.jpg');")
+                .slider__item.slider_index__item(style="background-image:url('./img/demo.jpg');")
+                .slider__item.slider_index__item(style="background-image:url('./img/demo.jpg');")
+            .item-content.content.mb-4
+                p.text-bold.text-blue.text-uppercase About company
+                p Euro Comm SA, has been established by Commodity Trade Professionals, who have been involved in the International Grain Trade since 1995. The Company presents a team of professionals specialized in the trade of grains from the Black Sea, North and South America to Middle East and North Africa countries. Throughout the years, our company has earned the trust of Clients making us the trusted partner to trade into niche markets.
+            .stats-row.mb-4
+                .stats-row__col.stats-row__col_title
+                    p.heading.text-blue Key<br/>Figures
+                    p 2019 - 2020 season
+                .stats-row__col
+                    .item-content.stats.text-center
+                        .stats__content
+                            p.stats__title 5
+                            p.text-uppercase.text-bold Key activities
+                            p.stats__intro originating, shipping, trading, storage, distribution
+                .stats-row__col
+                    .item-content.stats.text-center
+                        .stats__content
+                            p.stats__title 6
+                            p.text-uppercase.text-bold Destinations countries
+                            p.stats__intro Morocco, Tunis, Libya, Egypt, Oman, Saudi Arabia
+                .stats-row__col
+                    .item-content.stats.stats_image(style="background-image:url('./img/demo.jpg');")
+                .stats-row__col
+                    .item-content.stats.stats_image(style="background-image:url('./img/demo.jpg');")
+                .stats-row__col
+                    .item-content.stats.text-center
+                        .stats__content
+                            p.stats__title 75+
+                            p.text-uppercase.text-bold vessels
+                            p.stats__intro Over than 75 vessels chartered per the season
+                .stats-row__col
+                    .item-content.stats.stats_image(style="background-image:url('./img/demo.jpg');")
+                .stats-row__col
+                    .item-content.stats.text-center
+                        .stats__content
+                            p.stats__title 650.000+
+                            p.text-uppercase.text-bold tons of commodities
+                            p.stats__intro traded commodities are divided into 35% wheat, 50% barley, 10% corn, 5% various agricultural crops
+            .row.contact-row
+                .col-4
+                    .item-content.content
+                        p.text-uppercase.text-bold.text-blue MARKETS
+                        .map-info
+                            .map-info__item.map-info__item_orig
+                                p.mb-0.text-bold Origins:
+                                p Europe: Bulgaria, Romania, Baltic Sea countries *; Russia, Moldova, Ukraine, South and North America
+                            .map-info__item.map-info__item_dest
+                                p.mb-0.text-bold Destinations:
+                                p Morocco, Tunis, Libya, Egypt, Oman, Saudi Arabia
+                    p.mb-0 Shipment Tracking: 
+                        a.text-bold.text-underline(href="www.marinetraffic.com")
+                    p Shipment Documents: 
+                        span.text-italic /Coming soon/
+                .col-8
+                    .map#map
+        include component/footer/footer.pug
+        
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        script(src="./js/slick.min.js")
+
+        script(src="./js/jquery.inputmask.min.js")
+
+        script(src="./js/app.min.js")
