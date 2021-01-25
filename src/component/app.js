@@ -2,6 +2,7 @@ import $ from 'jquery';
 
 import '../component/slider/slider';
 import '../component/input/input';
+import '../component/map/map';
 
 $(document).ready(() =>{
   // Плавные скролл

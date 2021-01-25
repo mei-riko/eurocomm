@@ -23,21 +23,29 @@
 @import "header/header";
 @import "footer/footer";
 
+@import "navbar/navbar";
+@import "navbar/navbar_header";
+
 @import "slider/slick";
 @import "slider/slider";
 @import "slider/slider_index";
 
 @import "modal/modal";
+
 @import "pagination/pagination";
 
 @import "item/item-content";
 
 @import "content/content";
+@import "content/content-breadcrumbs";
+@import "content/content-text";
 
 @import "stats/stats-row";
 @import "stats/stats";
 @import "stats/stats_image";
+@import "stats/stats-item";
 
-@import "navbar/navbar";
-@import "navbar/navbar_header";
-@import "navbar/navbar_footer";
+@import "map/map";
+@import "map/map-info";
+
+

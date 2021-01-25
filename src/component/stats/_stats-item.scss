@@ -1,0 +1,17 @@
+.stats-item{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+
+    padding: 3*$spacer/4;
+
+    &__num{
+        font-size: 100px;
+        line-height: 80px;
+        font-weight: 800;
+        color: $blue;
+        padding-right: $spacer/2;
+    }
+}

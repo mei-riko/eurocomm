@@ -54,17 +54,16 @@ html(lang="ru")
                             p.stats__intro traded commodities are divided into 35% wheat, 50% barley, 10% corn, 5% various agricultural crops
             .row.contact-row
                 .col-4
-                    .item-content.content
-                        p.text-uppercase.text-bold.text-blue MARKETS
-                        .map-info
-                            .map-info__item.map-info__item_orig
-                                p.mb-0.text-bold Origins:
-                                p Europe: Bulgaria, Romania, Baltic Sea countries *; Russia, Moldova, Ukraine, South and North America
-                            .map-info__item.map-info__item_dest
-                                p.mb-0.text-bold Destinations:
-                                p Morocco, Tunis, Libya, Egypt, Oman, Saudi Arabia
+                    .item-content.map-info.mb-2
+                        p.text-uppercase.text-bold.text-blue.mb-2 MARKETS
+                        .map-info__item.map-info__item_orig.mb-2
+                            p.mb-0.text-bold Origins:
+                            p Europe: Bulgaria, Romania, Baltic Sea countries; Russia, Moldova, Ukraine, South and North America
+                        .map-info__item.map-info__item_dest
+                            p.mb-0.text-bold Destinations:
+                            p Morocco, Tunis, Libya, Egypt, Oman, Saudi Arabia
                     p.mb-0 Shipment Tracking: 
-                        a.text-bold.text-underline(href="www.marinetraffic.com")
+                        a.text-bold.text-underline(href="www.marinetraffic.com") www.marinetraffic.com
                     p Shipment Documents: 
                         span.text-italic /Coming soon/
                 .col-8
@@ -74,6 +73,9 @@ html(lang="ru")
         link(href='./css/slick.css', rel='stylesheet')
         link(href='./css/slick-theme.css', rel='stylesheet')
         script(src="./js/slick.min.js")
+
+        script(src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js')
+        link(href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css' rel='stylesheet')
 
         script(src="./js/jquery.inputmask.min.js")
 

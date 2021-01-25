@@ -1,0 +1,14 @@
+.map-info{
+    padding: map-get($map: $spacers, $key: 3);
+    &__item{
+        padding-left: $spacer;
+        background: no-repeat left -4px / 30px;
+
+        &_orig{
+            background-image: url("../icon/mapbox-icon.png");
+        }
+        &_dest{
+            background-image: url("../icon/mapbox-icon-gold.png");
+        }
+    }
+}

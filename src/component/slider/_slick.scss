@@ -11,6 +11,7 @@
         background-color: inherit;
         width: 40px;
         height: 40px;
+        border-radius: 20px;
         z-index: 11;
         transition: .4s;
         &.slick-disabled{
@@ -19,26 +20,27 @@
     }
     .slick-prev{
         left: 0;
-        transform: translate(-50%, -50%);
-        background: $white url("../icon/arrow-prev.svg") no-repeat center / 20px;
-        filter: drop-shadow( 2px 2px 4px rgba(0,0,0,.15) );
+        transform: translate(50%, -50%);
+        background: $white url("../icon/arrow-left.svg") no-repeat center / 10px;
+        filter: opacity(.75) drop-shadow( 2px 2px 4px rgba(0,0,0,.15) );
 
         &:before{content: '';}
+
         &:hover, &:focus{
-            background: $white url("../icon/arrow-prev.svg") no-repeat center / 20px;
-            filter: drop-shadow( 2px 2px 4px rgba(0,0,0,.3) );
+            background: $white url("../icon/arrow-left.svg") no-repeat center / 10px;
+            filter: opacity(1) drop-shadow( 2px 2px 4px rgba(0,0,0,.3) );
         }
     }
     .slick-next{
         right: 0;
-        transform: translate(50%, -50%);
-        background: $white url("../icon/arrow-next.svg") no-repeat center / 20px;
-        filter: drop-shadow( 2px 2px 4px rgba(0,0,0,.15) );
+        transform: translate(-50%, -50%);
+        background: $white url("../icon/arrow-right.svg") no-repeat center / 10px;
+        filter: opacity(.75) drop-shadow( 2px 2px 4px rgba(0,0,0,.15) );
 
         &:before{content: '';}
         &:hover, &:focus{
-            background: $white url("../icon/arrow-next.svg") no-repeat center / 20px;
-            filter: drop-shadow( 2px 2px 4px rgba(0,0,0,.3) );
+            background: $white url("../icon/arrow-right.svg") no-repeat center / 10px;
+            filter: opacity(1) drop-shadow( 2px 2px 4px rgba(0,0,0,.3) );
         }
     }
 }

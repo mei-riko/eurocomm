@@ -1,0 +1,28 @@
+.content-breadcrumbs{
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style: none;
+    margin-bottom: $spacer/2;
+
+    &__item{
+        font-size: 12px;
+        color: $grey;
+        &--active{
+            opacity: .5;
+        }
+    }
+
+    &__link{
+        color: $grey;
+
+        &:after{
+            content: "—";
+            margin: 0 6px;
+        }
+
+        &:hover, &:focus{
+            text-decoration: none;
+        }
+    }
+}

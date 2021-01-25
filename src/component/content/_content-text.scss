@@ -1,0 +1,23 @@
+.content-text{
+    padding: 3*$spacer/4;
+
+    img{
+        @extend .img-fluid;
+        border-radius: $border-radius;
+    }
+    ol{
+        padding-left: 1rem;
+    }
+    ul{
+        list-style: square;
+        padding-left: 1rem;
+    }
+    table{
+        thead{
+            background-color: $body-bg;
+        }
+        tr{
+            border-bottom: 1px solid $border-color;
+        }
+    }
+}

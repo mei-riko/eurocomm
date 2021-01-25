@@ -1,0 +1,35 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Text Page
+
+        link(href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,700;1,700&family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet")
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include component/header/header.pug
+        section.container
+            h1.mb-3 Error 404
+            .row
+                .col-8
+                    .content-text.item-content
+                        p Maxime placeat, facere possimus, omnis voluptas nulla vero eos. Quam nihil molestiae non recusandae corrupti, quos dolores eos, qui. Id est eligendi optio, cumque nihil impedit, quo minus id, quod maxime. Eligendi optio, cumque nihil molestiae consequatur, vel illum. Temporibus autem quibusdam et expedita distinctio. Saepe eveniet, ut perspiciatis, unde omnis dolor. Provident, similique sunt in ea commodi autem quibusdam et voluptates repudiandae sint.
+                        a.btn.btn_action(href="product.html") Our product
+                        h2 About company
+                        p Euro Comm SA, has been established by Commodity Trade Professionals, who have been involved in the International Grain Trade since 1995. The Company presents a team of professionals specialized in the trade of grains from the Black Sea, North and South America to Middle East and North Africa countries. Throughout the years, our company has earned the trust of Clients making us the trusted partner to trade into niche markets.
+                        a.btn.btn_action(href="contact.html") Contact us
+                .col-4
+                    .content-text.item-content.mb-3
+                        p.text-bold.text-blue.text-uppercase.mb-1 Our data
+                        p Our data is powered by hundreds of data sources and a distributed global network of more than half a billion monthly active users.
+                    .stats-item.item-content
+                        .stats-item__num 20
+                        .stats-item__content 
+                            p.text-bold.text-blue.text-uppercase.mb-0 Products
+                            p aut odit aut odit aut perferendis
+        include component/footer/footer.pug
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/app.min.js")

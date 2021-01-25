@@ -1,0 +1,21 @@
+.footer{
+    font-size: 12px;
+    color: $grey;
+    padding-top: map-get($map: $spacers, $key: 4);
+    padding-bottom: map-get($map: $spacers, $key: 4);
+
+    p{
+        font-size: 12px;
+    }
+
+    &__link{
+        color: $grey;
+        text-decoration: underline;
+
+        margin-right: $spacer/2;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
