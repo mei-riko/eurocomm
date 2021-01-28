@@ -32,13 +32,14 @@
 
 @import "modal/modal";
 
-@import "pagination/pagination";
-
 @import "item/item-content";
 
 @import "content/content";
 @import "content/content-breadcrumbs";
+@import "content/content-header";
 @import "content/content-text";
+
+@import "product/product";
 
 @import "stats/stats-row";
 @import "stats/stats";

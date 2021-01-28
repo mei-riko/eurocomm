@@ -1,0 +1,28 @@
+.product{
+    display: flex;
+    height: 290px;
+    
+    &__content{
+        @extend .item-content;
+        padding: $spacer;
+        flex: 0 0 calc(100% - 230px);
+        max-width: calc(100% - 230px);
+
+        height: 100%;
+
+        overflow: hidden;
+    }
+    &__image{
+        width: 230px;
+        flex: 0 0 230px;
+        max-width: 230px;
+
+        height: 100%;
+        border-radius: $border-radius;
+
+        background: no-repeat center / cover
+    }
+    &__title{
+        @extend .h2;
+    }
+}

@@ -1,8 +1,10 @@
 .btn_action{
     background: $bg-secondary;
+    background: linear-gradient(88.33deg, #0F3057 -7.64%, #024A9E 145.94%);
     color: $white;
+
     &:hover, &:focus{
-        background: lighten($color: $bg-secondary, $amount: 4);
-        color: $white;
+        background: linear-gradient(88.33deg, #0F3057 -7.64%, #024A9E 145.94%);
+        color: rgba($color: $white, $alpha: 0.8);
     }
 }

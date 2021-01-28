@@ -1,7 +1,9 @@
 .input{
-    background-color: inherit;
-    color: $white;
-    border: 1px solid $border-color;
+    background: $body-bg;
+    border: 1px solid rgba(18, 61, 101, 0.1);
+    box-shadow: inset -3px -3px 7px #FFFFFF, inset 2px 2px 5px rgba(136, 165, 191, 0.35);
+    border-radius: $border-radius/2;
+
     padding: $spacer/3 $spacer/2;
     margin-bottom: $spacer/3;
     transition: .4s;

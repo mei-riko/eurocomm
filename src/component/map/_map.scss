@@ -2,11 +2,16 @@
     box-shadow: -16px -16px 40px rgba(255, 255, 255, 0.8), 10px 4px 30px rgba(18, 61, 101, 0.1);
     border-radius: $border-radius;
     height: 400px;
+    
     .mapboxgl-canvas{
         outline: none;
         &:focus{
             outline: none;
         }
+    }
+
+    &_office{
+        height: 450px;
     }
 }
 
