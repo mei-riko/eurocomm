@@ -11,10 +11,10 @@ html(lang="ru")
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include component/header/header.pug
-        section.container
-            h1.mb-3 Simple Page Title
+        section.container.mt-md-3.mt-sm-2
+            h1.mb-3.mb-md-2 Simple Page Title
             .row
-                .col-8
+                .col-8.col-md-12.mb-md-3
                     .content-text.item-content
                         .content-breadcrumbs
                             .content-breadcrumbs__item
@@ -49,15 +49,18 @@ html(lang="ru")
                                 tr
                                     td Значение 3
                                     td Значение 4          
-                .col-4
-                    .content-text.item-content.mb-3
-                        p.text-bold.text-blue.text-uppercase.mb-1 Our data
-                        p Our data is powered by hundreds of data sources and a distributed global network of more than half a billion monthly active users.
-                    .stats-item.item-content
-                        .stats-item__num 20
-                        .stats-item__content 
-                            p.text-bold.text-blue.text-uppercase.mb-0 Products
-                            p aut odit aut odit aut perferendis
+                .col-4.col-md-12
+                    .row
+                        .col-12.col-md-6.col-sm-12
+                            .content-text.item-content.mb-3.mb-md-0.mb-sm-2
+                                p.text-bold.text-blue.text-uppercase.mb-1 Our data
+                                p Our data is powered by hundreds of data sources and a distributed global network of more than half a billion monthly active users.
+                        .col-12.col-md-6.col-sm-12
+                            .stats-item.item-content
+                                .stats-item__num 20
+                                .stats-item__content 
+                                    p.text-bold.text-blue.text-uppercase.mb-0 Products
+                                    p aut odit aut odit aut perferendis
         include component/footer/footer.pug
         script(src="./js/jquery.inputmask.js")
         script(src="./js/app.min.js")

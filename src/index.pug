@@ -10,50 +10,50 @@ html(lang="ru")
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include component/header/header.pug
-        section.container
-            .slider.slider_index.mb-3
+        section.container.mt-md-3.mt-sm-2
+            .slider.slider_index.mb-3.mb-sm-2
                 .slider__item.slider_index__item(style="background-image:url('./img/demo.jpg');")
                 .slider__item.slider_index__item(style="background-image:url('./img/demo.jpg');")
                 .slider__item.slider_index__item(style="background-image:url('./img/demo.jpg');")
-            .item-content.content.mb-4
-                p.text-bold.text-blue.text-uppercase About company
+            .item-content.content.mb-4.mb-sm-2
+                p.text-bold.text-blue.text-uppercase.mb-sm-1 About company
                 p Euro Comm SA, has been established by Commodity Trade Professionals, who have been involved in the International Grain Trade since 1995. The Company presents a team of professionals specialized in the trade of grains from the Black Sea, North and South America to Middle East and North Africa countries. Throughout the years, our company has earned the trust of Clients making us the trusted partner to trade into niche markets.
-            .stats-row.mb-4
-                .stats-row__col.stats-row__col_title
-                    p.heading.text-blue Key<br/>Figures
+            .stats-row.mb-4.mb-sm-3.mb-xs-2
+                .stats-row__col.stats-row__col_title.text-xs-center
+                    p.stats-row__heading.text-blue Key Figures
                     p 2019 - 2020 season
-                .stats-row__col
+                .stats-row__col.stats-row__col_1
                     .item-content.stats.text-center
                         .stats__content
                             p.stats__title 5
                             p.text-uppercase.text-bold Key activities
                             p.stats__intro originating, shipping, trading, storage, distribution
-                .stats-row__col
+                .stats-row__col.stats-row__col_2
                     .item-content.stats.text-center
                         .stats__content
                             p.stats__title 6
                             p.text-uppercase.text-bold Destinations countries
                             p.stats__intro Morocco, Tunis, Libya, Egypt, Oman, Saudi Arabia
-                .stats-row__col
+                .stats-row__col.stats-row__col_3
                     .item-content.stats.stats_image(style="background-image:url('./img/demo.jpg');")
-                .stats-row__col
+                .stats-row__col.stats-row__col_4
                     .item-content.stats.stats_image(style="background-image:url('./img/demo.jpg');")
-                .stats-row__col
+                .stats-row__col.stats-row__col_5
                     .item-content.stats.text-center
                         .stats__content
                             p.stats__title 75+
                             p.text-uppercase.text-bold vessels
                             p.stats__intro Over than 75 vessels chartered per the season
-                .stats-row__col
+                .stats-row__col.stats-row__col_6
                     .item-content.stats.stats_image(style="background-image:url('./img/demo.jpg');")
-                .stats-row__col
+                .stats-row__col.stats-row__col_7
                     .item-content.stats.text-center
                         .stats__content
                             p.stats__title 650.000+
                             p.text-uppercase.text-bold tons of commodities
                             p.stats__intro traded commodities are divided into 35% wheat, 50% barley, 10% corn, 5% various agricultural crops
             .row.contact-row
-                .col-4
+                .col-4.col-lg-5.col-md-12.mb-md-3.mb-xs-2
                     .item-content.map-info.mb-2
                         p.text-uppercase.text-bold.text-blue.mb-2 MARKETS
                         .map-info__item.map-info__item_orig.mb-2
@@ -66,7 +66,7 @@ html(lang="ru")
                         a.text-bold.text-underline(href="www.marinetraffic.com") www.marinetraffic.com
                     p Shipment Documents: 
                         span.text-italic /Coming soon/
-                .col-8
+                .col-8.col-lg-7.col-md-12
                     .map#map
         include component/footer/footer.pug
         

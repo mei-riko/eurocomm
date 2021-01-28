@@ -1,3 +1,15 @@
 .stats_image{
     background: no-repeat center / cover;
 }
+
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .stats_image{
+        height: 100%;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .stats_image{
+        height: 120px;
+    }
+}

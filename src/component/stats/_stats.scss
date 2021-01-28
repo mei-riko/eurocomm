@@ -34,3 +34,25 @@
         max-height: 45px;
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .stats{
+        &__title{
+            margin-bottom: 5px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .stats{
+        &:after{
+            display: none;
+        }
+        &__content{
+            position: unset;
+            align-items: flex-start;
+            text-align: left;
+        }
+        &__intro{
+            max-height: unset;
+        }
+    }
+}

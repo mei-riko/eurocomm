@@ -44,7 +44,15 @@
         }
     }
 }
-
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .slider{
+        .slick-arrow{
+            width: 24px;
+            height: 24px;
+            background-size: 7px;
+        }
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){
     .slider{
         .slick-next{

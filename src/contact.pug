@@ -10,39 +10,39 @@ html(lang="ru")
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include component/header/header.pug
-        section.container
+        section.container.mt-md-3.mt-sm-2
             h1.mb-0 Contact us
             .row
-                .col-4
-                    .content-text.item-content.mt-3
+                .col-4.col-sm-12.col-md-6
+                    .content-text.item-content.mt-sm-2.mt-3
                         p.text-bold.mb-1 Head Office
                         p EURO COMM SA, 4 Place du Bourg de Four, 1204 Geneva, Switzerland
                         p 
                             a.text-underline.text-green.text-bold(href="#") Open map
-                .col-4
-                    .content-text.item-content.mt-3
+                .col-4.col-sm-12.col-md-6
+                    .content-text.item-content.mt-sm-2.mt-3
                         p.text-bold.mb-1 E-mail for clients
                         p.mb-0
                             a.text-underline(href="mailto: info@eurocommltd.com") info@eurocommltd.com
                         p.text-italic Our officers will reply between working hours
                         p 
                             a.text-underline.text-green.text-bold(href="javascript;" data-src="#callback" data-fancybox) Send letter
-                .col-4
-                    .content-text.item-content.mt-3
+                .col-4.col-sm-12.col-md-6
+                    .content-text.item-content.mt-sm-2.mt-3
                         p.text-bold.mb-1 Phone / Fax
                         p T: 8 800 934 14 56
                             | <br/>F: 8 800 934 14 56
                         p 
                             a.text-underline.text-green.text-bold(href="#") Call us
-                .col-6
-                    .content-text.item-content.mt-3
+                .col-6.col-md-12
+                    .content-text.item-content.mt-sm-2.mt-3
                         p.h4 Contact form
                         form.form(action="")
                             .form__row
-                                .form__col.col-6.mb-1
+                                .form__col.col-6.col-sm-12.mb-1
                                     p.form__label First & Last Name or Company:
                                     input.input.input--full(type="text" placeholder="")
-                                .form__col.col-6.mb-1
+                                .form__col.col-6.col-sm-12.mb-1
                                     p.form__label Your e-mail:
                                     input.input.input--full(type="email" placeholder="")
                             p.form__label Message:
@@ -51,26 +51,26 @@ html(lang="ru")
                                 input.checkbox__input#emailCheck(type="checkbox" name="agree[]" checked="checked")
                                 label.checkbox__label.text-small(for="emailCheck") You agree that your information will be used to process your request.
                             button.btn.btn_action Send message
-                .col-6
+                .col-6.col-md-12.mt-md-2
                     .map.map_office.mt-3#mapOffice
-                .col-4
-                    .content-text.item-content.mt-3
+                .col-4.col-sm-12.col-md-6
+                    .content-text.item-content.mt-sm-2.mt-3
                         p.text-bold.mb-1 Commercial Manager
                         p.mb-0 Riham Helal
                         p.mb-0 E-mail: commercial@eurocommltd.com
                         p T: +20 100 005 0018
                         p 
                             a.text-underline.text-green.text-bold(href="#") Send letter
-                .col-4
-                    .content-text.item-content.mt-3
+                .col-4.col-sm-12.col-md-6
+                    .content-text.item-content.mt-sm-2.mt-3
                         p.text-bold.mb-1 Administration and IT Manager
                         p.mb-0 Riham Helal
                         p.mb-0 E-mail: commercial@eurocommltd.com
                         p T: +20 100 005 0018
                         p 
                             a.text-underline.text-green.text-bold(href="#") Send letter
-                .col-4
-                    .content-text.item-content.mt-3
+                .col-4.col-sm-12.col-md-6
+                    .content-text.item-content.mt-sm-2.mt-3
                         p.text-bold.mb-1 Operations Manager
                         p.mb-0 Riham Helal
                         p.mb-0 E-mail: commercial@eurocommltd.com

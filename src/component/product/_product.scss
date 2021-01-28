@@ -1,6 +1,7 @@
 .product{
     display: flex;
     height: 290px;
+    flex-wrap: wrap;
     
     &__content{
         @extend .item-content;
@@ -24,5 +25,59 @@
     }
     &__title{
         @extend .h2;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .product{
+        height: auto;
+        &__content{
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            padding-top: $spacer/2;
+            padding-bottom: $spacer/2;
+
+            height: 240px;
+        }
+        &__image{
+            flex: 0 0 100%;
+            max-width: 100%;
+            height: 120px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .product{
+        height: 290px;
+        &__content{
+            padding-top: $spacer;
+            padding-bottom: $spacer;
+            flex: 0 0 calc(100% - 230px);
+            max-width: calc(100% - 230px);
+
+            height: 100%;
+        }
+        &__image{
+            width: 230px;
+            flex: 0 0 230px;
+            max-width: 230px;
+
+            height: 100%;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .product{
+        height: auto;
+        &__content{
+            flex: 0 0 100%;
+            max-width: 100%;
+            height: auto;
+        }
+        &__image{
+            flex: 0 0 100%;
+            max-width: 100%;
+            height: 160px;
+        }
     }
 }

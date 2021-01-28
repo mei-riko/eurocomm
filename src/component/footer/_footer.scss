@@ -19,3 +19,15 @@
         }
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .footer{
+        padding-top: $spacer;
+        padding-bottom: 3*$spacer;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .footer{
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+}

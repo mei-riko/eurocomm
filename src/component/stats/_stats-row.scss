@@ -13,4 +13,64 @@
             justify-content: center;
         }
     }
+    &__heading{
+        @extend .heading;
+        max-width: 240px;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .stats-row{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: $spacer/2;
+
+        &__col{
+            &_title{order: 1;}
+            &_1{order: 2;}
+            &_2{order: 5;}
+            &_3{order: 3;}
+            &_4{order: 4;}
+            &_5{order: 6;}
+            &_6{order: 8;}
+            &_7{order: 7;}
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .stats-row{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        // grid-gap: $spacer/2;
+
+        &__col{
+            &_title{order: 1;}
+            &_1{order: 2;}
+            &_2{order: 3;}
+            &_3{order: 4;}
+            &_4{order: 5;}
+            &_5{order: 6;}
+            &_6{order: 8;}
+            &_7{order: 7;}
+        }
+        &__heading{
+            max-width: 100%;
+        }
+    }
+} 
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .stats-row{
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(150px, 1fr);
+
+        &__col{
+            &_title{order: 1;}
+            &_1{order: 2;}
+            &_2{order: 4;}
+            &_3{order: 3;}
+            &_4{order: 5;}
+            &_5{order: 6;}
+            &_6{order: 8;}
+            &_7{order: 7;}
+        }
+    }
 }

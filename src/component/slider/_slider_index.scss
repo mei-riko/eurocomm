@@ -1,10 +1,38 @@
 .slider_index{
     &__item{
+        background: no-repeat center / cover;
         &.slick-slide{
             min-height: 400px;
         }
     }
     .slick-list{
         border-radius: $border-radius;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .slider_index{
+        &__item{
+            &.slick-slide{
+                min-height: 340px;
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .slider_index{
+        &__item{
+            &.slick-slide{
+                min-height: 260px;
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .slider_index{
+        &__item{
+            &.slick-slide{
+                min-height: 200px;
+            }
+        }
     }
 }

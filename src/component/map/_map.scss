@@ -31,11 +31,9 @@
     border-radius: 50%;
     cursor: pointer;
 }
-
 .mapboxgl-popup {
     max-width: 240px;
 }
-
 .mapboxgl-popup-content {
     min-width: 120px;
     text-align: center;
@@ -44,5 +42,11 @@
     outline: none;
     &:focus{
         outline: none;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .map{
+        height: 360px;
     }
 }
