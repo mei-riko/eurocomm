@@ -5,6 +5,17 @@ html,body {
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
 }
+
+[dir='rtl']{
+    body{
+        text-align: right;
+
+        .text-bold, strong{
+            font-size: 110%;
+        }
+    }
+}
+
 *,
 *::before,
 *::after {
@@ -108,6 +119,12 @@ a{
     &-center{text-align: center;}
     &-left{text-align: left;}
 }
+[dir='rtl']{
+    .text{
+        &-right{text-align: left;}
+        &-left{text-align: right;}
+    }
+}
 .img-fluid{
     display: block;
     height: auto;
@@ -133,6 +150,12 @@ a{
         &-center{text-align: center;}
         &-right{text-align: right;}
     }
+    [dir='rtl']{
+        .text-xl{
+            &-right{text-align: left;}
+            &-left{text-align: right;}
+        }
+    }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     html,body {font-size: map-get($font-size, 'lg');}
@@ -148,6 +171,12 @@ a{
         &-center{text-align: center;}
         &-right{text-align: right;}
     }
+    [dir='rtl']{
+        .text-lg{
+            &-right{text-align: left;}
+            &-left{text-align: right;}
+        }
+    }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     html,body {font-size: map-get($font-size, 'md');}
@@ -162,6 +191,12 @@ a{
         &-left{text-align: left;}
         &-center{text-align: center;}
         &-right{text-align: right;}
+    }
+    [dir='rtl']{
+        .text-md{
+            &-right{text-align: left;}
+            &-left{text-align: right;}
+        }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
@@ -179,5 +214,11 @@ a{
         &-left{text-align: left;}
         &-center{text-align: center;}
         &-right{text-align: right;}
+    }
+    [dir='rtl']{
+        .text-sm{
+            &-right{text-align: left;}
+            &-left{text-align: right;}
+        }
     }
 }

@@ -60,7 +60,7 @@
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){
     .stats-row{
         grid-template-columns: 1fr;
-        grid-template-rows: minmax(150px, 1fr);
+        grid-template-rows: minmax(100px, 1fr);
 
         &__col{
             &_title{order: 1;}

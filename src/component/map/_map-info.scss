@@ -13,6 +13,16 @@
     }
 }
 
+[dir='rtl']{
+    .map-info{
+        &__item{
+            padding-left: 0;
+            padding-right: $spacer;
+            background-position-x: right;
+        }
+    }
+}
+
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .map-info{
         padding: map-get($map: $spacers, $key: 2);

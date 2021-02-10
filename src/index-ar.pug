@@ -1,0 +1,82 @@
+html(lang="ar" dir="rtl")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Index Page
+
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include component/header/header-ar.pug
+        section.container.mt-md-3.mt-sm-2
+            .slider.slider_index.mb-3.mb-sm-2
+                .slider__item.slider_index__item(style="background-image:url('./img/demo.jpg');")
+                .slider__item.slider_index__item(style="background-image:url('./img/field-combine.jpg');")
+                .slider__item.slider_index__item(style="background-image:url('./img/barley-field.jpg');")
+            .item-content.content.mb-4.mb-sm-2
+                p.text-bold.text-blue.text-uppercase.mb-sm-1 الصفحة الرئيسية
+                p تم تأسيس EURO COMM SA بواسطة متخصصي في تجارة السلع، الذين شاركوا في تجارة الحبوب الدولية منذ عام 1995. وتقدم الشركة فريق من المهنيين المتخصصين في مجال تجارة الحبوب من البحر الأسود وأمريكا الشمالية والجنوبية إلى دول الشرق الأوسط وشمال أفريقيا. لقد اكتسبت شركتنا ثقة العملاء مع مرور السنوات، ممّا جعلنا الشريك الموثوق للتجارة ضمن الأسواق المتخصصة.
+            .stats-row.mb-4.mb-sm-3.mb-xs-2
+                .stats-row__col.stats-row__col_title.text-xs-center
+                    p.stats-row__heading.text-blue الأرقام الرئيسية
+                    p موسم 2019 - 2020
+                .stats-row__col.stats-row__col_1
+                    .item-content.stats.text-center
+                        .stats__content
+                            p.stats__title(dir="ltr") 5
+                            p.text-uppercase.text-bold أنشطة رئيسية
+                            p.stats__intro الشراء من المزارعين ومن الجمعيات الزراعية مباشره والشحن والتجارة والتخزين والتوزيع.
+                .stats-row__col.stats-row__col_2
+                    .item-content.stats.text-center
+                        .stats__content
+                            p.stats__title(dir="ltr") 6
+                            p.text-uppercase.text-bold بلدان مُصدَّر لها
+                            p.stats__intro المغرب، تونس، ليبيا، مصر، عمان، السعودية
+                .stats-row__col.stats-row__col_3
+                    .item-content.stats.stats_image(style="background-image:url('./img/demo.jpg');")
+                .stats-row__col.stats-row__col_4
+                    .item-content.stats.stats_image(style="background-image:url('./img/demo.jpg');")
+                .stats-row__col.stats-row__col_5
+                    .item-content.stats.text-center
+                        .stats__content
+                            p.stats__title(dir="ltr") 75+
+                            p.text-uppercase.text-bold أكثر من
+                            p.stats__intro أكثر من 75 سفينة مؤجرة في كل موسم
+                .stats-row__col.stats-row__col_6
+                    .item-content.stats.stats_image(style="background-image:url('./img/demo.jpg');")
+                .stats-row__col.stats-row__col_7
+                    .item-content.stats.text-center
+                        .stats__content
+                            p.stats__title(dir="ltr") 650.000+
+                            p.text-uppercase.text-bold من
+                            p.stats__intro لقد تاجرنا بما يفوق الـ 650.000 طن من السلع، مقسمة على النسب التالية: 35٪ من القمح، 50٪ من الشعير، 10٪ من الذرة، و5٪ من المحاصيل الزراعية المتنوعة.
+            .row.contact-row
+                .col-4.col-lg-5.col-md-12.mb-md-3.mb-xs-2
+                    .item-content.map-info.mb-2
+                        p.text-uppercase.text-bold.text-blue.mb-2 الأسواق
+                        .map-info__item.map-info__item_orig.mb-2
+                            p.mb-0.text-bold الدول المُصدِّرة:
+                            p أوروبا: بلغاريا، رومانيا، ودول بحر البلطيق *؛روسيا، مولدوفا، أوكرانيا، وأمريكا الجنوبية والشمالية
+                        .map-info__item.map-info__item_dest
+                            p.mb-0.text-bold الدول المصدّر لها:
+                            p المغرب، تونس، ليبيا، مصر، عمان، السعودية
+                    p.mb-0 تتبّع الشحنة: 
+                        a.text-bold.text-underline(href="www.marinetraffic.com") www.marinetraffic.com
+                    p الوثائق المتعلّقة بالشحن: 
+                        span.text-italic(dir="ltr") /Coming soon/
+                .col-8.col-lg-7.col-md-12
+                    .map#map
+        include component/footer/footer.pug
+        
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        script(src="./js/slick.min.js")
+
+        script(src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js')
+        link(href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css' rel='stylesheet')
+
+        script(src="./js/jquery.inputmask.min.js")
+
+        script(src="./js/app.min.js")

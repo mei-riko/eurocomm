@@ -7,6 +7,11 @@
             outline: none;
         }
     }
+    .slick-track, 
+    .slick-list {
+        direction: ltr;
+    }
+
     .slick-arrow{
         background-color: inherit;
         width: 40px;
@@ -44,6 +49,32 @@
         }
     }
 }
+
+//Arabic 
+[dir='rtl'] .slider{
+    .slick-slide {
+        float: left;
+    }
+    .slick-prev{
+        left: auto;
+        right: 0;
+        background: $white url("../icon/arrow-right.svg") no-repeat center / 10px;
+
+        &:hover, &:focus{
+            background: $white url("../icon/arrow-right.svg") no-repeat center / 10px;
+        }
+    }
+    .slick-next{
+        right: auto;
+        left: 0;
+        background: $white url("../icon/arrow-left.svg") no-repeat center / 10px;
+
+        &:hover, &:focus{
+            background: $white url("../icon/arrow-left.svg") no-repeat center / 10px;
+        }
+    }
+}
+
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .slider{
         .slick-arrow{
