@@ -2990,9 +2990,10 @@ a:hover, a:focus {
     padding: 15px 0;
   }
   .header__logo {
-    width: 35px;
-    background-position: left center;
-    background-size: cover;
+    width: 100%;
+  }
+  .header__logo-row {
+    padding: 0;
   }
   .header__tracking-title, .header__nav-title {
     font-size: 11px;
